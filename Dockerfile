@@ -1,4 +1,4 @@
-FROM jboss-base
+FROM toletec/alpine-jboss-4.2.3
 
 #ADD datasource-ds.xml
 #COPY location of .war or .ear file for deploy
