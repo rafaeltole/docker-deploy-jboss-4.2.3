@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+  <local-tx-datasource>
+		<jndi-name>jdbc/libtechBOLDS</jndi-name>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+
+		<connection-url>jdbc:oracle:thin:@172.21.62.10:1521:bol_d</connection-url>
+		<user-name>sig_user</user-name>
+		<password>sig_#d#_user</password>
+
+		<exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter</exception-sorter-class-name>
+		<metadata>
+			<type-mapping>Oracle9i</type-mapping>
+		</metadata>		
+	    <idle-timeout-minutes>5</idle-timeout-minutes>
+	    <min-pool-size>5</min-pool-size>
+		<max-pool-size>10</max-pool-size>		
+	</local-tx-datasource>
+</datasources>
